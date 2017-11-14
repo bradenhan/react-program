@@ -3,29 +3,29 @@ import { BrowserRouter as Router,  Route, Link } from 'react-router-dom'
 
 import './less/component/router.less';  
 
-import Nav from './component/Nav'; 
+import ticTacToe from './component/ticTacToe'; 
 
 const BasicExample = () => (
   <Router>
     <div className="router">
       <ul>
-        <li><Link to="/">Home</Link></li>
+        <li><Link to="/">tic-tac-toe</Link></li>
         <li><Link to="/about">About</Link></li>
         <li><Link to="/topics">Topics</Link></li>
       </ul>
 
       <hr />
 
-      <Route exact path="/" component={Home} />
+      <Route exact path="/" component={TicTacToe} />
       <Route path="/about" component={About} />
       <Route path="/topics" component={Topics} />
     </div>
   </Router>
 )
 
-const Home = () => (
+const TicTacToe = () => (
   <div> 
-    <Nav />
+    <ticTacToe />
   </div>
 )
 
