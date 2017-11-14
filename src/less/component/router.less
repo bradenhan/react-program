@@ -1,0 +1,20 @@
+@import '../lib/mixins'; // 引入CSS 自动补全 LESS
+
+.router{
+    
+    ul{
+        &:first-child{
+            .clearfix();
+            background: #333;
+            color: #fff;
+
+            li{
+                float: left; 
+                margin: 0 20px; 
+                line-height: 40px;
+            }
+        } 
+    }
+
+    
+}

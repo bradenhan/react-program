@@ -1,28 +1,46 @@
-.App {
-  text-align: center;
+/* reset */
+body,h1,h2,h3,h4,h5,h6,dl,dt,dd,ul,ol,li,th,td,p,blockquote,pre,form,fieldset,legend,input,button,textarea,hr{
+  margin:0; 
+  padding:0;
+}
+ul,ol{
+  list-style:none outside none;
+}
+body{ 
+  color:#333;
+  font:normal 14px/1.5 'Microsoft YaHei','\5FAE\8F6F\96C5\9ED1'; 
+}
+select,input,button{
+  vertical-align:middle; 
+  font-size:100%;
+}
+fieldset,img{
+  border:0 none;
+}
+em{
+  font-style:normal;
+}
+.clear{
+  clear:both; 
+  display:block; 
+  height:0; 
+  visibility:hidden; 
+  font:0/0 arial;
+} 
+.clearfix {*zoom:1;
+  &:after{
+      content:"."; 
+      display: block; 
+      height: 0; 
+      clear: both; 
+      visibility: hidden; 
+      font-size:0;
+  }
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
+@import './lib/mixins'; // 引入CSS 自动补全 LESS
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
-}
-
-.App-title {
-  font-size: 1.5em;
-}
-
-.App-intro {
-  font-size: large;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+a{
+  color: #fff;
+  text-decoration: none;
 }
