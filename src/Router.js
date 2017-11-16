@@ -1,9 +1,10 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { BrowserRouter as Router,  Route, Link } from 'react-router-dom'
 
 import './less/component/router.less';  
 
-import ticTacToe from './component/ticTacToe'; 
+import Game from './component/ticTacToe'; 
+import ShoppingList from './component/ShoppingList';
 
 const BasicExample = () => (
   <Router>
@@ -25,14 +26,14 @@ const BasicExample = () => (
 
 const TicTacToe = () => (
   <div> 
-    <ticTacToe />
+    <Game />
   </div>
 )
 
 const About = () => (
-  <div>
-    <h2>About</h2>
-  </div>
+  <div> 
+    <ShoppingList name="Mark"/>
+  </div> 
 )
 
 const Topics = ({ match }) => (
