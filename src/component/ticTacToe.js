@@ -1,18 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import '../less/component/ticTacToe.less';
-
-// class Square extends React.Component { 
-//   render() {
-//     return (
-//       <button className="square" 
-//         onClick={() => this.props.onClick()}
-//       >
-//         {this.props.value}
-//       </button>
-//     );
-//   }
-// }
+import '../less/component/ticTacToe.less'; 
 
 function Square(props) {
   return (
